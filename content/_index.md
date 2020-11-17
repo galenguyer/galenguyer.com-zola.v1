@@ -1,3 +1,3 @@
 +++
-title = "Hi"
+template = "pages/homepage.html"
 +++
