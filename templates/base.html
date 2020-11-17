@@ -2,14 +2,37 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>Galen Guyer</title>
-  {% block head %} {% endblock %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block head %} {% endblock %}
 </head>
 
 <body>
     <div id="container">
-      {% block content %} {% endblock %}
+        <header class="header" role="banner">
+            <div class="brand">
+                <h1 class="name">
+                    {%- if current_path == "/" -%}
+                    <span>Galen Guyer</span>
+                    {%- else -%}
+                    <a href="/">Galen Guyer</a>
+                    {%- endif -%}
+                </h1>
+                <span class="description">Full-Stack Software Engineer</span>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li>
+                        {% if current_path == "/" -%}
+                        <a class="active">Home</a>
+                        {%- else -%}
+                        <a href="/">Home</a>
+                        {%- endif -%}
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        {% block content %} {% endblock %}
     </div>
 </body>
 
