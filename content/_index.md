@@ -1,3 +1,3 @@
 +++
-template = "pages/homepage.html"
+template = "pages/index.html"
 +++

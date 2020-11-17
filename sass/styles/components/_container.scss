@@ -1,0 +1,10 @@
+#container {
+	max-width: 60%;
+	margin: 0 auto;
+	padding-bottom: 4em;
+}
+@media screen and (max-width: $device_switch_width) {
+	#container {
+		width: 90%;
+	}
+}
