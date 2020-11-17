@@ -7,3 +7,7 @@ $devswitch: 1070px;
 @import "components/navbar";
 @import "components/rainbow";
 @import "components/footer";
+
+$fa-font-path: "/webfonts";
+
+@import "fontawesome/fa-used.scss";
